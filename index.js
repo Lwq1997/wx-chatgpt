@@ -37,7 +37,7 @@ const LIMIT_AI_IMAGE_COUNT = 5;
 const LIMIT_COUNT_RESPONSE = '对不起，因为ChatGPT调用收费，您的免费使用额度已用完~'
 
 const configuration = new Configuration({
-  apiKey: '##your api key##',
+  apiKey: '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',
 });
 
 const openai = new OpenAIApi(configuration);
@@ -180,7 +180,7 @@ router.post('/message/post', async ctx => {
       FromUserName: ToUserName,
       CreateTime: CreateTime,
       MsgType: 'text',
-      Content: `反弹你发的消息：${Content}`,
+      Content: '无用户信息',
     };
     return;
   }
