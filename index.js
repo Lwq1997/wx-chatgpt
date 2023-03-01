@@ -180,7 +180,7 @@ router.post('/message/post', async ctx => {
       FromUserName: ToUserName,
       CreateTime: CreateTime,
       MsgType: 'text',
-      Content: '无用户信息',
+      Content: `反弹你发的消息：${Content}`,
     };
     return;
   }
